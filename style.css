@@ -1,0 +1,995 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    text-transform: capitalize;
+    transition: all ease-in-out .5s;
+}
+
+/* typescript start  */
+h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* typescript end  */
+/* header start  */
+#header {
+    padding: 1% 8%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(247, 212, 168);
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.logo img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+#check {
+    display: none;
+}
+
+#check-btn {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li a {
+    color: black;
+    cursor: pointer;
+}
+
+.navbar li a:hover {
+    color: red;
+}
+
+.navbar img{
+    width: 25px;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* header end  */
+/* home start  */
+#home {
+    padding: 2% 8%;
+    background-color: rgb(247, 212, 168);
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text p {
+    padding: 4% 0 7%;
+}
+
+.hero-img img {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    background-color: red;
+    display: inline-block;
+    color: white;
+    padding: 0 0 10px 25px;
+    padding-right: 25px;
+    border-radius: 10%/50%;
+}
+
+.btn:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+}
+
+.hero-section .material-symbols-outlined {
+    position: relative;
+    top: 7px;
+}
+
+/* home end  */
+/* image start  */
+#image-product {
+    padding: 5% 16%;
+}
+
+.style-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.img1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* image end  */
+
+/* product start  */
+#products {
+    padding: 4% 16% 10%;
+}
+
+#products h2 {
+    text-align: center;
+    padding: 10% 0;
+}
+
+#products h6 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.stars i {
+    color: orange;
+    margin: 4px 0;
+}
+
+.product-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.product-img2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+#products img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+}
+
+.product:hover {
+    transform: translatey(-5px);
+    cursor: pointer;
+}
+
+/* product end  */
+
+/* smart watch start  */
+#smart-watch {
+    background-color: rgb(247, 212, 168);
+    display: flex;
+    padding: 5% 16% 4%;
+    align-items: center;
+}
+
+.hand-watch img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+}
+
+.text2 h6 {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.text2 h1 {
+    padding: 1rem 0;
+}
+
+.text2 p {
+    padding: 1rem 0 1.5rem;
+}
+
+.text2 .material-symbols-outlined {
+    position: relative;
+    top: 7px;
+}
+
+/* smart watch end  */
+
+/* about start  */
+#about {
+    padding: 6% 16% 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.review-area {
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.12);
+    padding: 30px;
+}
+
+.review-area i {
+    font-size: 30px;
+    color: orange;
+    padding-bottom: 20px;
+}
+
+.review-area p {
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.review-area img {
+    width: 40px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* about end  */
+
+/* brand start */
+#brand {
+    padding: 8% 16%;
+    text-align: center;
+}
+
+/* brand end  */
+
+/* footer start  */
+#contact {
+    padding: 3% 8% 1%;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-weight: 800;
+}
+
+#contact h6 {
+    font-size: 16px;
+    font-weight: 200;
+    margin: 20px 0;
+    color: aquamarine;
+}
+
+.link .apps img {
+    width: 140px;
+    max-width: 100%;
+    height: auto;
+}
+
+.link1 {
+    text-align: center;
+}
+
+.link1 .logo-white img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+.link2 {
+    text-align: center;
+}
+
+.link2 h3 {
+    margin-bottom: 20px;
+}
+
+.link2 .nav a {
+    color: rgb(247, 212, 168, 0.9);
+}
+
+.link3 {
+    text-align: center;
+}
+
+.link3 h3 {
+    margin-bottom: 20px;
+}
+
+.link3 .social i {
+    padding-left: 10px;
+    color: beige;
+}
+
+/* footer end  */
+
+/* copyright start  */
+.copy {
+    background-color: black;
+    color: #fff;
+    padding: 10px 8% 30px;
+    border-top: 1px solid #fff;
+}
+
+/* copyright end  */
+
+/* pc screen  */
+@media (min-width:1025px) and (max-width:1347px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .hero-img img {
+        width: 440px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #image-product {
+        padding: 5% 12%;
+    }
+
+    #products {
+        padding: 4% 12% 10%;
+    }
+
+    #smart-watch {
+        padding: 5% 12% 4%;
+    }
+
+    #about {
+        padding: 6% 12% 0;
+    }
+
+    .review-area i {
+        font-size: 22px;
+    }
+
+    #brand {
+        padding: 8% 12%;
+    }
+
+    #brand img {
+        width: 152px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #contact h6 {
+        font-size: 14px;
+    }
+
+    .link .apps img {
+        width: 120px;
+    }
+
+    .link1 .logo-white img {
+        width: 150px;
+    }
+
+    .copy {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1024px) {
+    .navbar img{
+        display: none;
+    }
+    .navbar {
+        display: block;
+        position: absolute;
+        top: 100%;
+        background-color: black;
+        left: -600px;
+        width: 30%;
+        height: 100vh;
+        text-align: center;
+    }
+    #check-btn{
+        display: inline-block;
+        font-size: 22px;
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+    .navbar li{
+        padding: 15px 0;
+    }
+    .navbar li a{
+        color: #fff;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+/* tablet screen  */
+@media (min-width:768px) and (max-width:1024px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+    #header{
+        z-index: 1;
+    }
+    #home {
+        padding: 7% 8%;
+        background-color: rgb(247, 212, 168);
+    }
+
+    .logo img {
+        width: 115px;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .hero-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .hero-img img {
+        width: 450px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text p {
+        padding: 3% 0 4%;
+    }
+
+    #image-product {
+        padding: 5% 12%;
+    }
+
+    #products {
+        padding: 4% 18% 10%;
+    }
+
+    .product-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+
+    .product-img2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+        margin-top: 5rem;
+    }
+
+    #products h6 {
+        font-size: 16px;
+    }
+
+    #products img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #smart-watch {
+        padding: 5% 8% 4%;
+        display: grid;
+        gap: 5rem;
+    }
+
+    #about {
+        padding: 6% 29% 0;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .review-area i {
+        font-size: 22px;
+    }
+
+    .review-area img {
+        width: 40px;
+    }
+
+    .review-area h3 {
+        font-size: 25px;
+    }
+
+    #brand {
+        padding: 8% 12%;
+    }
+
+    #brand img {
+        width: 152px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #contact {
+        padding: 12% 8%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .link2 {
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    .link2 h3 {
+        font-size: 25px;
+    }
+
+    .link2 .nav a {
+        font-size: 18px;
+    }
+
+    .link3 {
+        margin-top: 50px;
+    }
+
+    .link h3 {
+        font-size: 25px;
+    }
+
+    .link3 h3 {
+        font-size: 25px;
+    }
+
+    .link3 .social i {
+        font-size: 20px;
+    }
+
+    #contact h6 {
+        font-size: 15px;
+    }
+
+    .link .apps img {
+        width: 120px;
+    }
+
+    .link1 .logo-white img {
+        width: 150px;
+    }
+
+    .copy {
+        font-size: 18px;
+    }
+}
+@media (min-width:300px) and (max-width:767px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+    .navbar{
+        width: 50%;
+    }
+    .navbar li{
+        padding: 10px 0;
+    }
+    .navbar li a{
+        font-size: 12px;
+    }
+    #check-btn{
+        display: inline-block;
+        font-size: 18px;
+    }
+    #header{
+        padding: 3% 8%;
+        z-index: 1;
+    }
+    #home {
+        padding: 7% 8%;
+        padding-top: 17%;
+        background-color: rgb(247, 212, 168);
+    }
+
+    .logo img {
+        width: 115px;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .hero-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .hero-img img {
+        width: 220px;
+        max-width: 100%;
+        height: auto;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .hero-section .material-symbols-outlined {
+        position: relative;
+        top: 3px;
+        font-size: 16px;
+    }
+    .text p {
+        padding: 7% 0 8%;
+    }
+
+    #image-product {
+        padding: 10% 22%;
+    }
+    .style-img{
+        grid-template-columns: 1fr;
+    }
+    #products {
+        padding: 18% 22% 10%;
+    }
+    #products h2 {
+        text-align: center;
+        padding: 10% 0;
+        font-size: 20px;
+    }
+    .product-img {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+
+    .product-img2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5rem;
+        margin-top: 5rem;
+    }
+
+    #products h6 {
+        font-size: 16px;
+    }
+
+    #products img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #smart-watch {
+        padding: 5% 8% 4%;
+        display: grid;
+        gap: 5rem;
+    }
+    .text2 .material-symbols-outlined {
+        position: relative;
+        top: 1px;
+        font-size: 16px;
+    }
+
+    #about {
+        padding: 20% 14% 0;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .review-area i {
+        font-size: 22px;
+    }
+
+    .review-area img {
+        width: 50px;
+    }
+
+    .review-area h3 {
+        font-size: 25px;
+    }
+
+    #brand {
+        padding: 8% 12%;
+        display: block;
+    }
+
+    #brand img {
+        width: 152px;
+        max-width: 100%;
+        height: auto;
+    }
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10% 8%;
+        padding-top: 20%;
+    }
+    .link1{
+        text-align: left;
+        margin-top: 70px;
+    }
+    .link2 {
+        text-align: left;
+        margin-top: 50px;
+    }
+    .link2 h3 {
+        font-size: 20px;
+    }
+
+    .link2 .nav a {
+        font-size: 18px;
+    }
+
+    .link3 {
+        margin-top: 50px;
+    }
+
+    .link h3 {
+        font-size: 20px;
+    }
+
+    .link3 h3 {
+        font-size: 20px;
+    }
+
+    .link3 .social i {
+        font-size: 20px;
+    }
+
+    #contact h6 {
+        font-size: 15px;
+    }
+
+    .link .apps img {
+        width: 100px;
+    }
+
+    .link1 .logo-white img {
+        width: 120px;
+    }
+
+    .copy {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+@media (max-width:300px) {
+    h1 {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 5px;
+    }
+    .navbar{
+        width: 40%;
+    }
+    .navbar li{
+        padding: 5px 0;
+    }
+    .navbar li a{
+        font-size: 6px;
+    }
+    #check-btn{
+        display: inline-block;
+        font-size: 9px;
+    }
+    #header{
+        padding: 3% 8%;
+        z-index: 1;
+    }
+    #home {
+        padding: 7% 8%;
+        padding-top: 17%;
+        background-color: rgb(247, 212, 168);
+    }
+
+    .logo img {
+        width: 55px;
+    }
+
+    .navbar ul li a {
+        font-size: 8px;
+    }
+
+    .hero-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-img img {
+        width: 110px;
+        max-width: 100%;
+        height: auto;
+    }
+    .btn {
+        font-size: 7px;
+        padding: 4px 8px;
+    }
+    .hero-section .material-symbols-outlined {
+        position: relative;
+        top: 3px;
+        font-size: 8px;
+    }
+    .text p {
+        padding: 7% 0 8%;
+    }
+
+    #image-product {
+        padding: 10% 22%;
+    }
+    .style-img{
+        grid-template-columns: 1fr;
+    }
+    #products {
+        padding: 15% 22% 10%;
+    }
+    #products h2 {
+        text-align: center;
+        padding: 10% 0;
+        font-size: 10px;
+    }
+    .product-img {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .product-img2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 4rem;
+    }
+
+    #products h6 {
+        font-size: 8px;
+    }
+
+    #products img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #smart-watch {
+        padding: 5% 8% 4%;
+        display: grid;
+        gap: 4rem;
+    }
+    .text2 .material-symbols-outlined {
+        position: relative;
+        top: 1px;
+        font-size: 9px;
+    }
+
+    #about {
+        padding: 18% 14% 0;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .review-area i {
+        font-size: 11px;
+    }
+    .review-area p {
+        font-size: 6px;
+        padding-bottom: 10px;
+    }
+    .review-area img {
+        width: 25px;
+    }
+
+    .review-area h3 {
+        font-size: 13px;
+    }
+
+    #brand {
+        padding: 8% 12%;
+        display: block;
+    }
+
+    #brand img {
+        width: 76px;
+        max-width: 100%;
+        height: auto;
+    }
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10% 8%;
+        padding-top: 20%;
+    }
+    .link1{
+        text-align: left;
+        margin-top: 40px;
+    }
+    .link2 {
+        text-align: left;
+        margin-top: 30px;
+    }
+    .link2 h3 {
+        font-size: 15px;
+    }
+
+    .link2 .nav a {
+        font-size: 10px;
+    }
+
+    .link3 {
+        margin-top: 30px;
+    }
+
+    .link h3 {
+        font-size: 10px;
+    }
+
+    .link3 h3 {
+        font-size: 10px;
+    }
+
+    .link3 .social i {
+        font-size: 10px;
+    }
+
+    #contact h6 {
+        font-size: 8px;
+    }
+
+    .link .apps img {
+        width: 50px;
+    }
+
+    .link1 .logo-white img {
+        width: 70px;
+    }
+
+    .copy {
+        font-size: 9px;
+        text-align: center;
+    }
+}
